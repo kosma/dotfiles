@@ -1,0 +1,6 @@
+[user]
+	name = Kosma Moczek
+    email = kosma@kosma.pl
+
+[alias]
+    ci = commit
