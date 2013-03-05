@@ -4,3 +4,4 @@
 
 [alias]
     ci = commit
+    staged = diff --cached
