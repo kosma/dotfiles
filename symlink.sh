@@ -14,6 +14,8 @@ for file in .[^.]?*; do
     case "$file" in
         *.swp) continue ;;
         .git) continue ;;
+        .gitmodules) continue ;;
+        .gitignore) continue ;;
     esac
     target="$HOME/$file"
     if ! [[ -e "$target" ]]; then
