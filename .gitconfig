@@ -5,3 +5,6 @@
 [alias]
     ci = commit
     staged = diff --cached
+
+[push]
+	default = simple
