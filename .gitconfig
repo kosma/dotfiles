@@ -5,6 +5,7 @@
 [alias]
     ci = commit
     staged = diff --cached
+    unstage = reset HEAD
 
 [push]
 	default = simple
