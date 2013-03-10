@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/flake8"]
 	path = .vim/bundle/flake8
 	url = https://github.com/nvie/vim-flake8
+[submodule ".vim/bundle/pylint"]
+	path = .vim/bundle/pylint
+	url = git://github.com/orenhe/pylint.vim.git

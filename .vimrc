@@ -53,6 +53,9 @@ fun AddFileMappings()
         imap <F8> #!/usr/bin/env python# -*- coding: utf-8 -*-
 
         set commentstring=" # %s"
+        compiler pylint
+        let g:pylint_onwrite = 0
+        let g:pylint_inline_highlight = 0
     endif
 endfun
 
