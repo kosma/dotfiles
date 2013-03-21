@@ -23,13 +23,15 @@ shopt -s checkwinsize
 export HISTCONTROL=ignoreboth
 export HISTIGNORE='fg'
 
-# generate 
-if [ "$TERM" != "dumb" ]; then
-    eval "`dircolors -b`"
-fi
+if [[ "$OSTYPE" == darwin* ]]; then
+    export LS_OPTIONS='-FG'
+else
+    export LS_OPTIONS='-F -T 0 --color=auto'
+    if [ "$TERM" != "dumb" ]; then
+        eval "`dircolors -b`"
+    fi
 
-# 
-export LS_OPTIONS='-F -T 0 --color=auto'
+fi
 alias ls='ls $LS_OPTIONS'
 
 # lesspipe
