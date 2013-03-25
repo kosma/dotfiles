@@ -6,6 +6,7 @@
     ci = commit
     staged = diff --cached
     unstage = reset HEAD
+    ss = status --short
 
 [push]
-	default = simple
+    default = simple
