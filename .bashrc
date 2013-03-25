@@ -70,6 +70,12 @@ alias g='geeqie'
 alias S='sudo -i'
 alias i='ipython'
 
+if type -p virtualenvwrapper_lazy.sh >/dev/null; then
+    export WORKON_HOME=~/Envs
+    source virtualenvwrapper_lazy.sh
+    complete -r
+fi
+
 if type -p fortune >/dev/null; then
 	echo
 	[[ -e ~/.last-fortune ]] && mv -f ~/.last-fortune ~/.prev-fortune
