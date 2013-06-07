@@ -3,3 +3,6 @@ username = Kosma Moczek <kosma@kosma.pl>
 
 [extensions]
 color =
+
+[color]
+diff.trailingwhitespace = bold red_background
