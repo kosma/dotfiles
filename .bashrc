@@ -76,6 +76,8 @@ if type -p virtualenvwrapper_lazy.sh >/dev/null; then
     complete -r
 fi
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 if type -p fortune >/dev/null; then
 	echo
 	[[ -e ~/.last-fortune ]] && mv -f ~/.last-fortune ~/.prev-fortune
