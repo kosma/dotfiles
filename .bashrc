@@ -24,13 +24,14 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE='fg'
 
 if [[ "$OSTYPE" == darwin* ]]; then
+    alias df='df -h'
     export LS_OPTIONS='-FG'
 else
+    alias df='df -h -xtmpfs -xdevtmpfs -xdebugfs'
     export LS_OPTIONS='-F -T 0 --color=auto'
     if [ "$TERM" != "dumb" ]; then
         eval "`dircolors -b`"
     fi
-
 fi
 alias ls='ls $LS_OPTIONS'
 
@@ -60,7 +61,6 @@ alias a='sudo aptitude'
 alias as='aptitude search'
 alias ash='aptitude show'
 alias ai='sudo aptitude install'
-alias df='df -h -xtmpfs -xdevtmpfs -xdebugfs'
 alias s='screen'
 alias rm='rm -i'
 alias cp='cp -i'
