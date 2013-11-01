@@ -65,6 +65,7 @@ set showmatch
 set incsearch
 set hlsearch
 set nowrap
+set ruler
 
 
 " Exit Vim from Midnight Commander.
@@ -96,5 +97,8 @@ set shiftwidth=4
 set expandtab
 set shiftround
 set softtabstop=4
+
+" It's 2013.
+set ttyfast
 
 execute pathogen#infect()
