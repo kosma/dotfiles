@@ -1,9 +1,6 @@
 [submodule ".vim/pathogen"]
 	path = .vim/pathogen
 	url = https://github.com/tpope/vim-pathogen
-[submodule ".vim/bundle/gitgutter"]
-	path = .vim/bundle/gitgutter
-	url = https://github.com/airblade/vim-gitgutter
 [submodule ".vim/bundle/flake8"]
 	path = .vim/bundle/flake8
 	url = https://github.com/nvie/vim-flake8
