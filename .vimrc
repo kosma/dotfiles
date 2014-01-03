@@ -1,7 +1,15 @@
+execute pathogen#infect()
+
 " Syntax highlighting
 if has("syntax")
     syntax on
     set background=dark
+    "colorscheme solarized
+    "
+    " How about we make comments gray and focus on the code instead?
+    hi SpecialKey ctermfg=DarkGray
+    hi NonText    ctermfg=DarkGray
+    hi Comment    ctermfg=DarkGray 
 endif
 
 " Various programming aids
@@ -53,9 +61,23 @@ fun AddFileMappings()
         imap <F8> #!/usr/bin/env python# -*- coding: utf-8 -*-
 
         set commentstring=" # %s"
-        compiler pylint
-        let g:pylint_onwrite = 0
-        let g:pylint_inline_highlight = 0
+        "compiler pylint
+        "let g:pylint_onwrite = 0
+        "let g:pylint_inline_highlight = 0
+        "
+        set tabstop=4
+        set shiftwidth=4
+        set expandtab
+        set shiftround
+        set softtabstop=4
+    endif
+
+    if &ft == "ruby"
+        set tabstop=2
+        set shiftwidth=2
+        set expandtab
+        set shiftround
+        set softtabstop=2
     endif
 endfun
 
@@ -65,6 +87,7 @@ set showmatch
 set incsearch
 set hlsearch
 set nowrap
+set ruler
 
 
 " Exit Vim from Midnight Commander.
@@ -72,11 +95,6 @@ map <F3> ZQ
 map <F4> ZQ
 
 set modeline
-
-" How about we make comments gray and focus on the code instead?
-hi SpecialKey ctermfg=DarkGray
-hi NonText    ctermfg=DarkGray
-hi Comment    ctermfg=DarkGray 
 
 " Don't mess with my xterm title, please.
 set notitle
@@ -90,11 +108,4 @@ set bs=2
 " http://vim.wikia.com/wiki/Highlight_text_beyond_80_columns
 "match Todo '\%81v.*'
 
-" Four-space tabs. May break some filetypes - you've been warned.
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set shiftround
-set softtabstop=4
-
-execute pathogen#infect()
+let g:syntastic_python_checkers=['pylint']
