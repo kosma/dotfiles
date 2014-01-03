@@ -3,3 +3,5 @@ caption always "%{Wk}___________________________________________________________
 hardstatus alwayslastline "%{+r}%{gk} %H | %?%-Lw%?%{Wk}%n*%f %t%?(%u)%?%{gk}%?%+Lw%?"
 bind w
 bind ^w
+deflogin off
+defscrollback 1000
