@@ -108,4 +108,5 @@ set bs=2
 " http://vim.wikia.com/wiki/Highlight_text_beyond_80_columns
 "match Todo '\%81v.*'
 
-let g:syntastic_python_checkers=['pylint']
+" It's 2013.
+set ttyfast
