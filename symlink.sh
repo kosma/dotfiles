@@ -11,13 +11,20 @@ for file in .[^.]?*; do
         .gitmodules) continue ;;
         .gitignore) continue ;;
     esac
+
     target="$HOME/$file"
+
+    if [[ -L "$target" ]]; then
+        echo "Skip: $file"
+	continue
+    elif [[ -f "$target" ]]; then
+        echo "Move: $file"
+        mv "$target" "$target.dist"
+    fi
+
     if ! [[ -e "$target" ]]; then
-        target="$HOME/$file"
         echo "Install: $file -> $target"
         ln -s "$PWD/$file" "$target"
-    elif [[ -L "$target" ]]; then
-        echo "Skip: $file"
     else
         echo "ERROR: $file already exists and is not a symlink. Please move it out of the way."
         exit 1
