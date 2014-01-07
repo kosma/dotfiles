@@ -4,7 +4,7 @@ username = Kosma Moczek <kosma@kosma.pl>
 [extensions]
 color =
 record =
-shelve = /home/Kosma/Projects/hgshelve.py
+shelve = $HOME/.hgrc.d/hgshelve.py
 
 [color]
 diff.trailingwhitespace = bold red_background
