@@ -16,6 +16,7 @@ eol = auto
 hgext.extdiff =
 graphlog =
 mq =
+rebase =
 
 [extdiff]
 cmd.kdiff3 =
