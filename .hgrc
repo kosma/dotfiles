@@ -25,7 +25,7 @@ cmd.kdiff3 =
 kdiff3.args = $base $local $other -o $output
 
 [alias]
-review = diff -r review($1,$2)
+review = diff -r "review('$1','$2')"
 
 [revsetalias]
 review($1, $2) = ancestor($1, $2)..$2
