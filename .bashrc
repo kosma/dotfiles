@@ -53,6 +53,9 @@ PS1='\[\e[0;$((UID?B_USER:B_ROOT));$((UID?C_USER:C_ROOT))m\]\u\[\e[0;$B_HOST;${C
 # set screen title
 PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${PWD##*/}\\x1b\\"'
 
+# Help Mercurial find itself in this dark, cruel BSD world.
+export HOSTNAME
+
 ################################################################################
 # Aliases
 ################################################################################
