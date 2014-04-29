@@ -6,7 +6,6 @@ color =
 record =
 convert =
 churn =
-shelve = $HOME/.hgrc.d/hgshelve.py
 
 [color]
 diff.trailingwhitespace = bold red_background
