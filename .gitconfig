@@ -10,3 +10,11 @@
 
 [push]
     default = simple
+
+[merge]
+    commit = no
+    ff = no
+
+[branch]
+    autosetuprebase = always
+    autosetupmerge = always
