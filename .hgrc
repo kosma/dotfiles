@@ -5,6 +5,7 @@ username = Kosma Moczek <kosma@kosma.pl>
 color =
 record =
 convert =
+churn =
 shelve = $HOME/.hgrc.d/hgshelve.py
 
 [color]
