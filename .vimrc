@@ -95,6 +95,7 @@ map <F3> ZQ
 map <F4> ZQ
 
 set modeline
+set modelines=5
 
 " Don't mess with my xterm title, please.
 set notitle
