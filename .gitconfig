@@ -10,12 +10,11 @@
     rollback = reset --soft HEAD~1
 
 [push]
-    default = simple
+	default = current
 
-#[merge]
-#    commit = no
-#    ff = no
-#
-#[branch]
-#    autosetuprebase = always
-#    autosetupmerge = always
+[color]
+	ui = always
+[log]
+	decorate = full
+[branch]
+	autosetuprebase = always
