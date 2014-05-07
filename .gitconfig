@@ -15,3 +15,5 @@
 	decorate = full
 [branch]
 	autosetuprebase = always
+[achievement]
+	upload = true
