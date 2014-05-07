@@ -10,7 +10,7 @@
 [push]
 	default = current
 [color]
-	ui = always
+	ui = auto
 [log]
 	decorate = full
 [branch]
