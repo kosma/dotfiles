@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/pylint"]
 	path = .vim/bundle/pylint
 	url = https://github.com/orenhe/pylint.vim
+[submodule ".vim/bundle/autotag"]
+	path = .vim/bundle/autotag
+	url = https://github.com/craigemery/vim-autotag
