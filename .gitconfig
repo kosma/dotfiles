@@ -9,6 +9,7 @@
 	out = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --branches --not --remotes
 	rollback = reset --soft HEAD~1
 	unstash = stash pop
+	squash-all = !git reset $(git commit-tree -m 'initial commit' 'HEAD^{tree}')
 [push]
 	default = current
 [color]
