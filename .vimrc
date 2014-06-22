@@ -94,6 +94,9 @@ set ruler
 map <F3> ZQ
 map <F4> ZQ
 
+" Sudo-like file overwrite.
+cmap W!! w !sudo tee % >/dev/null
+
 set modeline
 set modelines=5
 
