@@ -4,6 +4,7 @@
 	ci = commit
 	staged = diff --cached
 	unstage = reset HEAD
+	s = status
 	ss = status --short --branch
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit
 	out = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --branches --not --remotes
