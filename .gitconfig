@@ -21,3 +21,8 @@
 	autosetuprebase = always
 [achievement]
 	upload = true
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = kosma@kosma.pl
