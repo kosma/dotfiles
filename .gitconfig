@@ -26,3 +26,5 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = kosma@kosma.pl
+[diff]
+	algorithm = histogram
