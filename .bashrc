@@ -56,6 +56,9 @@ PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${PWD##*/}\\x1b\\"'
 # Help Mercurial find itself in this dark, cruel BSD world.
 export HOSTNAME
 
+# Bind Ctrl-S to i-search.
+stty -ixon
+
 ################################################################################
 # Aliases
 ################################################################################
