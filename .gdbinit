@@ -19,6 +19,12 @@ define halt
     monitor reset halt
 end
 
+define go
+    make
+    load
+    run
+end
+
 # generic stuff
 
 set height 0
