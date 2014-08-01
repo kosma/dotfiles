@@ -18,6 +18,7 @@ hgext.extdiff =
 graphlog =
 mq =
 rebase =
+shelve =
 
 [extdiff]
 cmd.kdiff3 =
