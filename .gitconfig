@@ -26,5 +26,13 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = kosma@kosma.pl
+	from = kosma@kosma.pl
+	suppresscc = all
+	confirm = always
+	chainreplyto = false
+	aliasesfile = ~/.gitaliases
+	aliasfiletype = mutt
 [diff]
 	algorithm = histogram
+#[format]
+#	attach = PATCH
