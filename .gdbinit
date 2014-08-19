@@ -19,6 +19,16 @@ define halt
     monitor reset halt
 end
 
+# DBGMCU_CR bits: DBG_SLEEP, DBG_STOP
+
+define dbgsleep1
+    monitor mww 0xE0042004 0x00000001
+end
+
+define dbgsleep0
+    monitor mww 0xE0042004 0x00000000
+end
+
 define go
     make
     load
