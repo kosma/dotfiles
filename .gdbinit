@@ -29,6 +29,11 @@ define dbgsleep0
     monitor mww 0xE0042004 0x00000000
 end
 
+# NuttX errno access
+define errno
+    print strerror(*get_errno_ptr())
+end
+
 define go
     make
     load
