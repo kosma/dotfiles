@@ -19,6 +19,10 @@ define halt
     monitor reset halt
 end
 
+define resume
+    monitor resume
+end
+
 # DBGMCU_CR bits: DBG_SLEEP, DBG_STOP
 
 define dbgsleep1
