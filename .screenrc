@@ -4,4 +4,4 @@ hardstatus alwayslastline "%{+r}%{gk} %H | %?%-Lw%?%{Wk}%n*%f %t%?(%u)%?%{gk}%?%
 bind w
 bind ^w
 #deflogin off
-defscrollback 1000
+defscrollback 10000
