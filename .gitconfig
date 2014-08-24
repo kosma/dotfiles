@@ -6,9 +6,9 @@
 	unstage = reset HEAD
 	s = status
 	ss = status --short --branch
-	lg  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit
-	out = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --branches --not --remotes
-	in  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --remotes --not --branches
+	lg  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an <%ae>%Creset' --abbrev-commit
+	out = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --branches --not --remotes
+	in  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --remotes --not --branches
 	rollback = reset --soft HEAD~1
 	unstash = stash pop
 	squash-all = !git reset $(git commit-tree -m 'initial commit' 'HEAD^{tree}')
