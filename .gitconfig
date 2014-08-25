@@ -10,6 +10,7 @@
 	out = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --branches --not --remotes
 	in  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an <%ae>%Creset' --abbrev-commit --remotes --not --branches
 	rollback = reset --soft HEAD~1
+	discard = reset --hard HEAD~1
 	unstash = stash pop
 	squash-all = !git reset $(git commit-tree -m 'initial commit' 'HEAD^{tree}')
 	last-tag = describe --tags --abbrev=0
