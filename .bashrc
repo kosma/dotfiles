@@ -22,6 +22,8 @@ shopt -s checkwinsize
 # ignore spaces, duplicates and fgs
 export HISTCONTROL=ignoreboth
 export HISTIGNORE='fg*'
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 
 if [[ "$OSTYPE" == darwin* ]]; then
     alias df='df -h'
