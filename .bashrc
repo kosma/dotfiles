@@ -25,6 +25,9 @@ export HISTIGNORE='fg*'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
+# ignore common junk
+export FIGNORE='.o:~'
+
 if [[ "$OSTYPE" == darwin* ]]; then
     alias df='df -h'
     export LS_OPTIONS='-FG'
