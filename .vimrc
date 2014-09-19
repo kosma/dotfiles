@@ -89,6 +89,8 @@ set hlsearch
 set nowrap
 set ruler
 
+" Ex? What is Ex?
+nnoremap Q <nop>
 
 " Exit Vim from Midnight Commander.
 map <F3> ZQ
