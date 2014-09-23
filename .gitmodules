@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/capnp"]
 	path = .vim/bundle/capnp
 	url = https://github.com/cstrahan/vim-capnp
+[submodule ".vim/bundle/clighter"]
+	path = .vim/bundle/clighter
+	url = https://github.com/bbchung/clighter
