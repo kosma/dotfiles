@@ -118,13 +118,10 @@ set bs=2
 set ttyfast
 
 " Load clighter only on systems that have libclang.
+let s:libclang_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
 let g:clighter_autostart = 0
-if has("unix")
-    let s:uname = system("uname")
-    if s:uname == "Darwin\n"
-        let g:clighter_libclang_file = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
-        let g:clighter_autostart = 1
-    endif
+if filereadable(s:libclang_path)
+    let g:clighter_autostart = 1
 endif
 
 " vim: ts=4 sw=4 et
