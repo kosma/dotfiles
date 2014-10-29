@@ -41,3 +41,5 @@
 	algorithm = histogram
 #[format]
 #	attach = PATCH
+[merge]
+	tool = vimdiff3
