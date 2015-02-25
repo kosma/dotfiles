@@ -2,6 +2,7 @@
 	editor = vim
 [user]
 	name = Kosma Moczek
+	email = kosma@kosma.pl
 [alias]
 	ci = commit
 	staged = diff --cached
