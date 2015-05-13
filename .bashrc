@@ -80,6 +80,7 @@ test -e /usr/share/mc/bin/mc.sh && source /usr/share/mc/bin/mc.sh
 alias g='geeqie'
 alias S='sudo -i'
 alias i='ipython'
+alias db='docker build -t ${PWD##*/} .'
 
 if type -p virtualenvwrapper_lazy.sh >/dev/null; then
     export WORKON_HOME=~/Envs
