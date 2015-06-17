@@ -56,7 +56,8 @@ source ~/.host_colors
 # set prompt (with colors!)
 PS1='\[\e[0;$((UID?B_USER:B_ROOT));$((UID?C_USER:C_ROOT))m\]\u\[\e[0;$B_HOST;${C_HOST}m\]@\h:\w\[\e[0;1;$(($??31:32))m\]\$\[\e[0m\] '
 # set screen title
-PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${SSH_CONNECTION:+$(hostname -s):}${PWD/#$HOME/\~}\\x1b\\"'
+shopt -s compat42 # don't expand the tilde
+PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${SSH_CONNECTION:+$(hostname -s):}${PWD/#$HOME/~}\\x1b\\"'
 
 # Help Mercurial find itself in this dark, cruel BSD world.
 export HOSTNAME
