@@ -1,6 +1,6 @@
 startup_message off
 caption always "%{Wk}______________________________________________________________________________________________________________________________________________________________________________________"
-hardstatus alwayslastline "%{+r}%{gk} %H | %?%-Lw%?%{Wk}%n*%f %t%?(%u)%?%{gk}%?%+Lw%?"
+hardstatus alwayslastline "%{+r}%{gk} %H | %?%-Lw%?[%{Wk}%n*%f %t%{gk}]%?(%u)%?%{gk}%?%+Lw%?"
 bind w
 bind ^w
 #deflogin off
