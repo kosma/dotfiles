@@ -57,7 +57,7 @@ source ~/.host_colors
 PS1='\[\e[0;$((UID?B_USER:B_ROOT));$((UID?C_USER:C_ROOT))m\]\u\[\e[0;$B_HOST;${C_HOST}m\]@\h:\w\[\e[0;1;$(($??31:32))m\]\$\[\e[0m\] '
 # set screen title
 shopt -s compat42 2>/dev/null # don't expand the tilde. fucking bash authors
-PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${SSH_CONNECTION:+$(hostname -s):}${PWD/#$HOME/~}\\x1b\\"'
+PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${SSH_CONNECTION:+$(hostname -s):}${PWD##*/}\\x1b\\"'
 
 # Help Mercurial find itself in this dark, cruel BSD world.
 export HOSTNAME
