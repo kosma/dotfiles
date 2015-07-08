@@ -54,7 +54,7 @@ if [[ ! -e ~/.host_colors ]]; then
 fi
 source ~/.host_colors
 # set prompt (with colors!)
-PS1='\[\e[0;$((UID?B_USER:B_ROOT));$((UID?C_USER:C_ROOT))m\]\u\[\e[0;$B_HOST;${C_HOST}m\]@\h:\w\[\e[0;1;$(($??31:32))m\]\$\[\e[0m\] '
+PS1='\[\e[0;$((UID?B_USER:B_ROOT));$((UID?C_USER:C_ROOT))m\]${USER:-\u}\[\e[0;$B_HOST;${C_HOST}m\]@\h:\w\[\e[0;1;$(($??31:32))m\]\$\[\e[0m\] '
 # set screen title
 shopt -s compat42 2>/dev/null # don't expand the tilde. fucking bash authors
 PROMPT_COMMAND='[[ "$TERM" == screen ]] && echo -ne "\\x1bk${SSH_CONNECTION:+$(hostname -s):}${PWD##*/}\\x1b\\"'
