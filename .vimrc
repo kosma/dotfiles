@@ -72,7 +72,7 @@ fun AddFileMappings()
         set softtabstop=4
     endif
 
-    if &ft == "ruby"
+    if &ft == "ruby" || &ft == "yaml"
         set tabstop=2
         set shiftwidth=2
         set expandtab
