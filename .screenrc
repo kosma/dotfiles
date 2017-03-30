@@ -6,3 +6,4 @@ bind ^w
 #deflogin off
 defscrollback 10000
 logfile screenlog.%t
+altscreen on
