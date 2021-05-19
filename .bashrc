@@ -65,6 +65,9 @@ export HOSTNAME
 # Bind Ctrl-S to i-search.
 stty -ixon
 
+# Cache Buildroot downloads.
+export BR2_DL_DIR=~/buildroot-downloads
+
 ################################################################################
 # Aliases
 ################################################################################
