@@ -68,6 +68,9 @@ stty -ixon
 # Cache Buildroot downloads.
 export BR2_DL_DIR=~/buildroot-downloads
 
+# Screen on WSL2
+export SCREENDIR=$HOME/.screen
+
 ################################################################################
 # Aliases
 ################################################################################
