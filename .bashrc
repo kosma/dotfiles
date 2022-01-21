@@ -71,6 +71,9 @@ export BR2_DL_DIR=~/buildroot-downloads
 # Screen on WSL2
 export SCREENDIR=$HOME/.screen
 
+# Use native symlinks on Windows
+export MSYS="winsymlinks:nativestrict"
+
 ################################################################################
 # Aliases
 ################################################################################
