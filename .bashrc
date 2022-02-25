@@ -32,7 +32,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
     alias df='df -h'
     export LS_OPTIONS='-FG'
 else
-    alias df='df -h -xtmpfs -xdevtmpfs -xdebugfs'
+    alias df='df -h -xtmpfs -xdevtmpfs -xdebugfs -xsquashfs'
     export LS_OPTIONS='-F -T 0 --color=auto'
     if [ "$TERM" != "dumb" ]; then
         eval "`dircolors -b`"
