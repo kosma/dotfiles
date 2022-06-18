@@ -44,3 +44,5 @@
 #	attach = PATCH
 [merge]
 	tool = vimdiff3
+[init]
+	defaultBranch = main
