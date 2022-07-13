@@ -4,6 +4,9 @@ set -e
 shopt -s dotglob
 shopt -s nullglob
 
+# Use native symlinks on Windows
+export MSYS="winsymlinks:nativestrict"
+
 for file in .[^.]?*; do
     case "$file" in
         *.swp) continue ;;
