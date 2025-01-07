@@ -78,27 +78,11 @@ export MSYS="winsymlinks:nativestrict"
 # Aliases
 ################################################################################
 
-alias a='sudo aptitude'
-alias as='aptitude search'
-alias ash='aptitude show'
-alias ai='sudo aptitude install'
 alias s='screen'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 test -e /usr/share/mc/bin/mc.sh && source /usr/share/mc/bin/mc.sh
-alias g='geeqie'
-alias S='sudo -i'
-alias i='ipython'
-alias db='docker build -t ${PWD##*/} .'
-
-if type -p virtualenvwrapper_lazy.sh >/dev/null; then
-    export WORKON_HOME=~/Envs
-    source virtualenvwrapper_lazy.sh
-    complete -r
-fi
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 if type -p fortune >/dev/null; then
 	echo
