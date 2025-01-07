@@ -30,11 +30,4 @@ if [[ "$PWD" == "/" && "`uname -o`" == "Msys" ]]; then
 	cd
 fi
 
-# tempdir
-mkdir -p ~/tmp
-export TMPDIR=$HOME/tmp
-export TEMP=$TMPDIR
-export TMP=$TMPDIR
-export TEMPDIR=$TMPDIR
-
 export LC_ALL="en_US.UTF-8"
