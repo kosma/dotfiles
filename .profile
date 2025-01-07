@@ -39,3 +39,9 @@ if [[ "$EXEPATH" == 'C:\Program Files\Git' ]]; then
 	gpg-connect-agent -q /bye
 	export SSH_AUTH_SOCK="`gpgconf --list-dirs agent-ssh-socket`"
 fi
+
+# Special handling under WSL2
+if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
+	# Start gpg-agent bridge
+	source dwa-socaty-szczepione-dupami.sh
+fi
