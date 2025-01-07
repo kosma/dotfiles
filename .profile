@@ -22,9 +22,8 @@ if [ "$PATH" != *sbin* ]; then
 fi
 
 # set PATH so it includes user's private bin if it exists
-mkdir -p ~/bin
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+mkdir -p ~/.local/bin
+PATH="$HOME/.local/bin:$PATH"
 fi
 
 # tempdir
