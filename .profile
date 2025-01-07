@@ -24,6 +24,10 @@ fi
 # set PATH so it includes user's private bin if it exists
 mkdir -p ~/.local/bin
 PATH="$HOME/.local/bin:$PATH"
+
+# Git Bash starts in / by default; navigate to $HOME instead
+if [[ "$PWD" == "/" && "`uname -o`" == "Msys" ]]; then
+	cd
 fi
 
 # tempdir
