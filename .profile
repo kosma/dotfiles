@@ -31,4 +31,9 @@ if [[ "$EXEPATH" == 'C:\Program Files\Git' ]]; then
 	if [[ "$PWD" == "/" ]]; then
 		cd
 	fi
+
+	# Start gpg-agent and set the variable for automatic Yubikey handling
+	mkdir -m 700 -p ~/.gnupg
+	gpg-connect-agent -q /bye
+	export SSH_AUTH_SOCK="`gpgconf --list-dirs agent-ssh-socket`"
 fi
