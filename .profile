@@ -25,7 +25,10 @@ fi
 mkdir -p ~/.local/bin
 PATH="$HOME/.local/bin:$PATH"
 
-# Git Bash starts in / by default; navigate to $HOME instead
-if [[ "$PWD" == "/" && "`uname -o`" == "Msys" ]]; then
-	cd
+# Special handling under Git Bash
+if [[ "$EXEPATH" == 'C:\Program Files\Git' ]]; then
+	# Git Bash starts in / by default; navigate to $HOME instead
+	if [[ "$PWD" == "/" ]]; then
+		cd
+	fi
 fi
