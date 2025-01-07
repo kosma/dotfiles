@@ -25,6 +25,9 @@ fi
 mkdir -p ~/.local/bin
 PATH="$HOME/.local/bin:$PATH"
 
+# make sure the GnuPG folder exists in any case
+mkdir -m 700 -p ~/.gnupg
+
 # Special handling under Git Bash
 if [[ "$EXEPATH" == 'C:\Program Files\Git' ]]; then
 	# Git Bash starts in / by default; navigate to $HOME instead
@@ -33,7 +36,6 @@ if [[ "$EXEPATH" == 'C:\Program Files\Git' ]]; then
 	fi
 
 	# Start gpg-agent and set the variable for automatic Yubikey handling
-	mkdir -m 700 -p ~/.gnupg
 	gpg-connect-agent -q /bye
 	export SSH_AUTH_SOCK="`gpgconf --list-dirs agent-ssh-socket`"
 fi
