@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	symlinks = true
 [user]
 	name = Kosma Moczek
 	email = kosma@kosma.pl
